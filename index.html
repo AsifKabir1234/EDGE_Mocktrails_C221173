@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MockTrails Profile</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logo Section -->
+        <div class="text-3xl font-bold text-purple-600">
+          <a href="#">MockTrails</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="space-x-6 hidden md:flex">
+          <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Home</a>
+          <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Interviewers</a>
+          <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Blogs</a>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="flex items-center space-x-4">
+          <button class="text-gray-800 bg-gray-100 px-4 py-2 rounded hover:bg-gray-200">
+            Sign In
+          </button>
+          <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="relative">
+      <img
+        src="asset/Cover_pic.jpeg"
+        alt="Banner"
+        class="w-full h-72 object-cover"
+      />
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container mx-auto px-4 mt-8">
+      <!-- Full Width Profile Section -->
+      <div class="bg-white rounded-lg shadow p-4 w-full">
+        <div class="flex items-center space-x-8"> <!-- Increased space for profile items -->
+          <!-- Larger Profile Picture with Left Margin -->
+          <img src="asset/Profile_pic.jpeg" alt="Profile"
+            class="w-40 h-40 rounded-full border-4 border-white shadow-md ml-8" />
+
+          <!-- Profile Details with Increased Font Size -->
+          <div class="flex-1 ml-8"> <!-- Added left margin here -->
+            <h1 class="text-2xl font-bold text-gray-800">Asif Kabir</h1> <!-- Increased font size -->
+            <p class="text-gray-600 text-base"> <!-- Increased font size -->
+              Senior Software Engineer at <span class="font-semibold text-gray-800">Growth Garage</span>
+            </p>
+            <div class="flex items-center mt-4 text-gray-600">
+              <!-- Location Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.134 2 5 5.134 5 8c0 3.314 7 12 7 12s7-8.686 7-12c0-2.866-3.134-6-7-6zm0 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z"></path>
+              </svg>
+              <span class="text-lg">Location</span> <!-- Increased font size -->
+            </div>
+            <div class="flex items-center mt-2 text-gray-600">
+              <!-- Timer Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"></path>
+              </svg>
+              <span class="text-lg">Active 7 days ago</span> <!-- Increased font size -->
+            </div>
+            <div class="flex items-center mt-2 text-gray-600">
+              <!-- Loading Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3m-12 0H3"></path>
+              </svg>
+              <span class="text-lg">Usually responds in an hour</span> <!-- Increased font size -->
+            </div>
+          </div>
+          <!-- Profile Icons -->
+          <div class="flex space-x-4 ml-auto">
+            <!-- Message Box Button -->
+            <button class="flex items-center text-purple-600 hover:text-purple-800 px-4 py-2 border border-purple-600 rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25V6a1 1 0 00-1-1h-4a1 1 0 00-1 1v5.25l-4-3v13l4-3V17a1 1 0 011 1h4a1 1 0 011-1v-5.25l4 3v-13l-4 3z"></path>
+              </svg>
+              Message
+            </button>
+            <!-- Heart Icon for a Man (Replaces the dropdown icon) -->
+            <button class="text-purple-600 hover:text-purple-800">
+              <!-- Heart (Man) icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-1.104 0-2-.896-2-2 0-1.057.896-1.92 2-1.92 1.104 0 2 .863 2 1.92 0 1.104-.896 2-2 2zM17.36 4.64C16.84 4.12 16.06 4 15.34 4c-1.105 0-2.01.864-2.24 1.9-1.98-.52-4.03-.45-5.1.52-1.76 1.46-2.44 4.04-1.61 6.2 1.28 3.02 5.56 5.34 6.16 5.8 0 0 0 0 0 0 0 0 1.07-.72 2.16-1.72 2.92-2.68 2.56-6.52 1.39-9.52-.47-1.14-1.2-1.89-2.07-2.48-1.67-.89-3.81-.34-5.23 1.13-1.53 1.43-2.36 3.38-1.91 5.14.18-.02.38-.04.58-.04 1.81 0 3.42.93 4.42 2.34 2.68-2.44 5.54-3.34 7.3-5.98z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd Page -->
+    <div class="bg-gray-50 text-gray-800 font-sans">
+        <!-- Container -->
+        <div class="container mx-auto p-6">
+            <!-- Tabs -->
+            <nav class="flex items-center justify-between border-b mb-6">
+                <div class="flex space-x-6">
+                    <button aria-label="Overview"
+                        class="text-lg font-semibold text-purple-600 border-b-2 border-purple-600">
+                        Overview
+                    </button>
+                    <button aria-label="Reviews" class="text-lg text-gray-500 hover:text-purple-600">
+                        Reviews
+                    </button>
+                </div>
+            </nav>
+    
+            <!-- Experience Header -->
+            <header class="mb-8">
+                <h1 class="text-2xl font-semibold">5+ Years of Experience in Software Engineering</h1>
+            </header>
+    
+            <!-- Flexbox Layout -->
+            <div class="flex flex-wrap md:flex-nowrap gap-6">
+                <!-- Left Side: Background and Experience Section -->
+                <section class="flex-1 bg-white shadow-md rounded-lg p-6">
+                    <!-- Background Section -->
+                    <article class="mb-8">
+                        <h2 class="text-lg font-semibold mb-4">Background</h2>
+                        <div class="mb-4">
+                            <p class="font-medium text-gray-600">Skills</p>
+                            <span
+                                class="inline-block bg-red-100 text-red-600 text-sm font-semibold px-3 py-1 rounded-full mt-2">
+                                Full Stack
+                            </span>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-600">Fluent In</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span
+                                    class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
+                                    Bengali
+                                </span>
+                                <span
+                                    class="inline-block bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
+                                    English
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <!-- Experiences Section -->
+                    <article>
+                        <h2 class="text-lg font-semibold mb-4">Experiences</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 shadow-md rounded-lg p-4">
+                                <h3 class="font-semibold text-gray-800">Software Engineer</h3>
+                                <p class="text-gray-500 text-sm">ShareTrip Ltd (Jan 2022 - Dec 2023)</p>
+                                <p class="text-sm text-gray-600">Played a key role in developing ShareTrip B2B Portal.</p>
+                            </div>
+                            <div class="bg-gray-50 shadow-md rounded-lg p-4">
+                                <h3 class="font-semibold text-gray-800">Software Engineer</h3>
+                                <p class="text-gray-500 text-sm">Field Nation (Feb 2020 - Dec 2021)</p>
+                                <p class="text-sm text-gray-600">Platform Operations Team.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+    
+                <!-- Right Side: Community Stats and Sessions Section -->
+                <section class="flex-1 bg-white shadow-md rounded-lg p-6">
+                    <!-- Community Stats Section -->
+                    <article class="mb-8">
+                        <h2 class="text-lg font-semibold mb-4">Community Statistics</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <!-- Completed Sessions -->
+                            <div class="text-center bg-red-50 p-4 rounded-lg">
+                                <div
+                                    class="text-red-600 bg-red-100 rounded-full w-12 h-12 flex justify-center items-center mx-auto mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 11H5M19 11V6a2 2 0 00-2-2H7a2 2 0 00-2 2v5m14 0v5a2 2 0 01-2 2H7a2 2 0 01-2-2v-5" />
+                                    </svg>
+                                </div>
+                                <p class="text-xl font-bold">0</p>
+                                <p class="text-gray-600">Completed Sessions</p>
+                            </div>
+    
+                            <!-- Total Mentoring Time -->
+                            <div class="text-center bg-green-50 p-4 rounded-lg">
+                                <div
+                                    class="text-green-600 bg-green-100 rounded-full w-12 h-12 flex justify-center items-center mx-auto mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-9v5a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    </svg>
+                                </div>
+                                <p class="text-xl font-bold">0 Minutes</p>
+                                <p class="text-gray-600">Total mentoring time</p>
+                            </div>
+    
+                            <!-- Average Attendance -->
+                            <div class="text-center bg-blue-50 p-4 rounded-lg">
+                                <div
+                                    class="text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex justify-center items-center mx-auto mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 3a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5z" />
+                                    </svg>
+                                </div>
+                                <p class="text-xl font-bold">3%</p>
+                                <p class="text-gray-600">Average Attendance</p>
+                            </div>
+    
+                            <!-- Experience -->
+                            <div class="text-center bg-yellow-50 p-4 rounded-lg">
+                                <div
+                                    class="text-yellow-600 bg-yellow-100 rounded-full w-12 h-12 flex justify-center items-center mx-auto mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 9V7a4 4 0 10-8 0v2M5 13h14a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2v-3a2 2 0 012-2z" />
+                                    </svg>
+                                </div>
+                                <p class="text-xl font-bold">5 Years</p>
+                                <p class="text-gray-600">Experience</p>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <!-- Sessions -->
+                    <article class="bg-white shadow-md rounded-md p-4">
+                        <h2 class="text-2xl font-bold mb-4">Sessions</h2>
+                    
+                        <div id="sessions" class="space-y-4">
+                            <!-- Full Stack Developer Mock Interview -->
+                            <div class="card bg-white shadow-md border p-4 rounded-md cursor-pointer" data-session-id="1">
+                                <h3 class="text-lg font-bold">Full Stack Developer Mock Interview</h3>
+                                <p class="text-sm">40 minutes</p>
+                                <p class="text-sm"><strong>Availability:</strong> Monday, Wednesday, Friday</p>
+                                <p class="text-sm"><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                                <p class="text-lg font-bold text-purple-600">450.00 ৳</p>
+                            </div>
+                    
+                            <!-- Frontend Training Mock Interview -->
+                            <div class="card bg-white shadow-md border p-4 rounded-md cursor-pointer" data-session-id="2">
+                                <h3 class="text-lg font-bold">Frontend Training Mock Interview</h3>
+                                <p class="text-sm">30 minutes</p>
+                                <p class="text-sm"><strong>Availability:</strong> Tuesday, Thursday</p>
+                                <p class="text-sm"><strong>Time:</strong> 5:00 PM - 7:00 PM</p>
+                                <p class="text-lg font-bold text-purple-600">350.00 ৳</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Book Now Button -->
+                        <div class="mt-6">
+                            <button id="book-now" class="btn btn-primary w-full bg-blue-500 hover:bg-blue-600">
+                                Book Now
+                            </button>
+                        </div>
+                    
+                        <!-- Message Display -->
+                        <div id="message" class="mt-4 text-green-600 font-bold hidden"></div>
+                    </article>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let selectedSession = null;
+
+            document.querySelectorAll('#sessions .card').forEach((card) => {
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('#sessions .card').forEach((c) => c.classList.remove('border-blue-500'));
+                    card.classList.add('border-blue-500');
+                    selectedSession = card.getAttribute('data-session-id');
+                });
+            });
+
+            document.getElementById('book-now').addEventListener('click', () => {
+                if (!selectedSession) {
+                    alert('Please select a session to book!');
+                    return;
+                }
+
+                const messageDiv = document.getElementById('message');
+                messageDiv.textContent = 'Session successfully booked!';
+                messageDiv.classList.remove('hidden');
+
+                selectedSession = null;
+                document.querySelectorAll('#sessions .card').forEach((c) => c.classList.remove('border-blue-500'));
+            });
+        });
+    </script>
+    
+    
+
+    <!-- 3rd Page -->
+    <div class="bg-gray-50 text-gray-800">
+        <!-- Education Section -->
+        <div class="container mx-auto px-6 py-8">
+            <h2 class="text-2xl font-semibold mb-6">Educations</h2>
+            <div class="space-y-4">
+                <!-- First Education -->
+                <div class="flex items-center bg-white shadow-lg rounded-lg p-4">
+                    <div class="flex-shrink-0">
+                        <div class="bg-purple-100 text-purple-600 rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422A12.045 12.045 0 0012 10.002a12.045 12.045 0 00-6.16 1.576L12 14zm0 0v6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-800">International Islamic University Chittagong</h3>
+                        <p class="text-sm text-gray-500">Bachelors of Computer Science and Engineering • 2024 • 2024</p>
+                    </div>
+                </div>
+    
+                <!-- Second Education -->
+                <div class="flex items-center bg-white shadow-lg rounded-lg p-4">
+                    <div class="flex-shrink-0">
+                        <div class="bg-purple-100 text-purple-600 rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422A12.045 12.045 0 0012 10.002a12.045 12.045 0 00-6.16 1.576L12 14zm0 0v6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-800">United International University</h3>
+                        <p class="text-sm text-gray-500">Masters in CS in Data Science Track • 2024 • 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Section -->
+        <footer class="bg-white py-8">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!-- Brand and Social Media -->
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <h3 class="text-2xl font-bold text-purple-600">MockTrails</h3>
+                        <p class="text-sm text-gray-500 mt-2">Empowering your journey, one Mock Interview at a time.</p>
+                        <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                            <a href="#" class="text-purple-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 11.983c0-5.49-4.5-9.983-9.984-9.983-5.491 0-9.985 4.495-9.985 9.983 0 4.991 3.657 9.127 8.438 9.923v-7.031h-2.54v-2.892h2.54v-2.207c0-2.516 1.492-3.892 3.776-3.892 1.093 0 2.238.195 2.238.195v2.47h-1.261c-1.242 0-1.631.772-1.631 1.563v1.871h2.773l-.443 2.891h-2.33v7.031c4.783-.797 8.44-4.933 8.44-9.924z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-purple-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3.0009c-.8359.3729-1.7327.625-2.6752.7402 1.0126-.6061 1.6912-1.5485 2.0301-2.6777-.9483.5638-1.998.9751-3.117.1.0001.0176-.0026-.0026.0026-.001-.9002.5354-1.9004.9253-2.9629.8585-.6055-.0691-1.1898-.1978-1.7544-.4215-1.1998-.362-2.0837-1.247-2.4443-2.447-.1567-.5726-.1558-1.1666.003-1.741.0775-.3247.1756-.6435.2997-.956.1236-.3124.2702-.6147.4375-.9041.1675-.2893.3512-.5668.5604-.833.2091-.2662.4432-.5151.6986-.7456.2545-.2305.5312-.443.8357-.636.3045-.193.6294-.367.9732-.5189.3438-.151.7041-.2783 1.0791-.3779.7492-.199.1531-.0384 1.1538-.2 2.2924.6167 4.5508 2.5436 5.8257 5.2042.273.547.4996 1.1267.674 1.725.174.598.293 1.213.3505 1.8415.058.628.0612 1.2675-.0124 1.907-.0737.639-.215.127-.059 2.007-.189.463-.409.927-.661 1.386-.252.459-.537.903-.863 1.327z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Services -->
+                    <div class="space-y-2 text-center md:text-left">
+                        <h4 class="text-lg font-semibold">Services</h4>
+                        <a href="#" class="text-gray-500 hover:underline">Interviewers</a><br />
+                        <a href="#" class="text-gray-500 hover:underline">Blogs</a><br />
+                        <a href="#" class="text-gray-500 hover:underline">Contact</a>
+                    </div>
+                    <!-- Pages -->
+                    <div class="space-y-2 text-center md:text-left">
+                        <h4 class="text-lg font-semibold">Pages</h4>
+                        <a href="#" class="text-gray-500 hover:underline">Terms and Condition</a><br />
+                        <a href="#" class="text-gray-500 hover:underline">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="mt-6 text-center text-gray-400 text-sm">
+                    © 2024 All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+      
+      
+
+  </body>
+</html>
